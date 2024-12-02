@@ -1,6 +1,1 @@
-void main() {
-  int? lineCount;
-  assert(lineCount == null);
-
-  print(lineCount);
-}
+  // name = 'Alice'; // Error: a final variable can only be set once.

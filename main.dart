@@ -1,6 +1,6 @@
-late String
-    description; //Declaring a non-nullable variable that's initialized after its declaration.
-
+final name = 'Bob'; // Without a type annotation
+final String nickname = 'Bobby';
 void main() {
-  print(description);
+  name = 'Alice'; // Error: a final variable can only be set once.
+  print(name);
 }
