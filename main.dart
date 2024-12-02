@@ -1,6 +1,6 @@
-void main() {
-  int? lineCount;
-  assert(lineCount == null);
+late String
+    description; //Declaring a non-nullable variable that's initialized after its declaration.
 
-  print(lineCount);
+void main() {
+  print(description);
 }
