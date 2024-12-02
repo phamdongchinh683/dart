@@ -1,3 +1,6 @@
 void main() {
-  print('Hello, World!');
+  int? lineCount;
+  assert(lineCount == null);
+
+  print(lineCount);
 }
