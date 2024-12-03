@@ -1,19 +1,26 @@
 void main() {
-  // String -> int
-  var one = int.parse('1');
-  assert(one == 1);
- 
-// String -> double
-  var onePointOne = double.parse('1.1');
-  assert(onePointOne == 1.1);
+  var s = 'string interpolation';
 
-// int -> String
-  String oneAsString = 1.toString();
-  assert(oneAsString == '1');
+  assert('Dart has $s, which is very handy.' ==
+      'Dart has string interpolation, '
+          'which is very handy.');
+  assert('That deserves all caps. '
+          '${s.toUpperCase()} is very handy!' ==
+      'That deserves all caps. '
+          'STRING INTERPOLATION is very handy!');
 
-// double -> String
-  String piAsString = 3.14159.toStringAsFixed(2);
-  assert(piAsString == '3.14');
+  // These work in a const string.
+  const aConstNum = 0;
+  const aConstBool = true;
+  const aConstString = 'a constant string';
 
-  print(one);
+// These do NOT work in a const string.
+  var aNum = 0;
+  var aBool = true;
+  var aString = 'a string';
+  const aConstList = [1, 2, 3];
+
+  const validConstString = '$aConstNum $aConstBool $aConstString';
+// const invalidConstString = '$aNum $aBool $aString $aConstList';
+  print(validConstString);
 }
