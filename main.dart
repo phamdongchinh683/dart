@@ -1,10 +1,19 @@
-var foo = const [];
-final bar = const [];
-const baz = []; // Equivalent to `const []`
-
 void main() {
-  foo = [1, 2, 3]; // Was const []
-  baz = [42]; // Error: Constant variables can't be assigned a value.
+  // String -> int
+  var one = int.parse('1');
+  assert(one == 1);
+ 
+// String -> double
+  var onePointOne = double.parse('1.1');
+  assert(onePointOne == 1.1);
 
-  print(foo);
+// int -> String
+  String oneAsString = 1.toString();
+  assert(oneAsString == '1');
+
+// double -> String
+  String piAsString = 3.14159.toStringAsFixed(2);
+  assert(piAsString == '3.14');
+
+  print(one);
 }
