@@ -1,26 +1,22 @@
 void main() {
-  var s = 'string interpolation';
+  // Check for an empty string.
+  var fullName = '';
+  assert(fullName.isEmpty);
 
-  assert('Dart has $s, which is very handy.' ==
-      'Dart has string interpolation, '
-          'which is very handy.');
-  assert('That deserves all caps. '
-          '${s.toUpperCase()} is very handy!' ==
-      'That deserves all caps. '
-          'STRING INTERPOLATION is very handy!');
+// Check for zero.
+  var hitPoints = 0;
+  assert(hitPoints == 0);
 
-  // These work in a const string.
-  const aConstNum = 0;
-  const aConstBool = true;
-  const aConstString = 'a constant string';
+// Check for null.
+  var unicorn = null;
+  assert(unicorn == null);
 
-// These do NOT work in a const string.
-  var aNum = 0;
-  var aBool = true;
-  var aString = 'a string';
-  const aConstList = [1, 2, 3];
+// Check for NaN.
+  var iMeantToDoThis = 0 / 0;
+  assert(iMeantToDoThis.isNaN);
 
-  const validConstString = '$aConstNum $aConstBool $aConstString';
-// const invalidConstString = '$aNum $aBool $aString $aConstList';
-  print(validConstString);
+  print(fullName);
+  print(hitPoints);
+  print(unicorn);
+  print(iMeantToDoThis);
 }
