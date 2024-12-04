@@ -1,22 +1,11 @@
 void main() {
-  // Check for an empty string.
-  var fullName = '';
-  assert(fullName.isEmpty);
+  var record = ('first', a: 2, b: true, 1);
+  print(record);
+  print(record.$1); // Prints 'first'
+  print(record.a); // Prints 2
+  print(record.b); // Prints true
+  print(record.$2); // Prints 'last'
+  (num, Object, String) pair = (42, 'a', "21");
 
-// Check for zero.
-  var hitPoints = 0;
-  assert(hitPoints == 0);
-
-// Check for null.
-  var unicorn = null;
-  assert(unicorn == null);
-
-// Check for NaN.
-  var iMeantToDoThis = 0 / 0;
-  assert(iMeantToDoThis.isNaN);
-
-  print(fullName);
-  print(hitPoints);
-  print(unicorn);
-  print(iMeantToDoThis);
+  print(pair.$3);
 }
