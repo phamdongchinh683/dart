@@ -1,11 +1,23 @@
 void main() {
-  var list = [1, 2, 3];
-  assert(list.length == 3);
-  assert(list[1] == 2);
+  var halogens = {'fluorine', 'chlorine', 'bromine', 'iodine', 'astatine'};
+  var names = <String>{};
+// Set<String> names = {}; // This works, too.
+  // var names = {}; // Creates a map, not a set.
 
-  list[1] = 1;
-  assert(list[1] == 1);
-  var constantList = const [1, 2, 3];
-  // constantList[1] = 1; // This line will cause an error.
-  print(list);
+  var elements = <String>{};
+  elements.add('fluorine');
+  elements.add('fluorine2');
+
+  elements.addAll(halogens);
+  print(elements);
+  // {fluorine, fluorine2, chlorine, bromine, iodine, astatine}
+
+  final constantSet = const {
+    'fluorine',
+    'chlorine',
+    'bromine',
+    'iodine',
+    'astatine',
+  };
+// constantSet.add('helium'); // This line will cause an error.
 }
