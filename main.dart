@@ -1,13 +1,12 @@
 void main() {
-  Map<String, String> countryCapital = {
-    'name': 'Washington, D.C.',
-    'address': 'New Delhi',
-    'age': 'Beijing',
+  var example = {
+    'name': 'John Doe',
+    'phone': '1234567890',
+    'city': 'New York',
+    'code': 'NYC'
   };
-  countryCapital['Country'] = 'United States'; // ad key and value
-  countryCapital['Country'] = 'Japan';
-  countryCapital['name'] = 'Washington2222';
-  print(countryCapital);
-  print(countryCapital.keys);
-  print(countryCapital.values);
+
+  var keysWithLength4 = example.keys.where((key) => key.length == 4);
+
+  print('Keys with length 4: $keysWithLength4');
 }
