@@ -1,6 +1,13 @@
 void main() {
-  const fruits = ["apple", "banana"];
-  for (String fruit in fruits) {
-    print(fruit);
-  }
+  List<String> days = [];
+
+  days.addAll([
+    'monday',
+    'tuesday',
+    'wednesday',
+    'thursday',
+    'friday',
+    'saturday',
+    'sunday'
+  ]);
 }
