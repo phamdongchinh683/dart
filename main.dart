@@ -1,13 +1,8 @@
 void main() {
-  List<String> days = [];
+  List<String> names = ["join", "alex", 'putin'];
 
-  days.addAll([
-    'monday',
-    'tuesday',
-    'wednesday',
-    'thursday',
-    'friday',
-    'saturday',
-    'sunday'
-  ]);
+  List<String> startWithS =
+      names.where((element) => element.startsWith("join")).toList();
+
+  print(startWithS);
 }
