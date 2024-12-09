@@ -1,4 +1,6 @@
-void main(){
-  const List<String> names = ["Chinh","Chinh","Truong","Hong"];
-  print(names);
+void main() {
+  const fruits = ["apple", "banana"];
+  for (String fruit in fruits) {
+    print(fruit);
+  }
 }
