@@ -1,8 +1,13 @@
 void main() {
-  List<String> names = ["join", "alex", 'putin'];
-
-  List<String> startWithS =
-      names.where((element) => element.startsWith("join")).toList();
-
-  print(startWithS);
+  Map<String, String> countryCapital = {
+    'name': 'Washington, D.C.',
+    'address': 'New Delhi',
+    'age': 'Beijing',
+  };
+  countryCapital['Country'] = 'United States'; // ad key and value
+  countryCapital['Country'] = 'Japan';
+  countryCapital['name'] = 'Washington2222';
+  print(countryCapital);
+  print(countryCapital.keys);
+  print(countryCapital.values);
 }
