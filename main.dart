@@ -1,15 +1,9 @@
-import 'OOP/class-dart.dart';
+import 'OOP/constructor.dart';
 
 void main() {
-  Animal animal = Animal();
+  Student student = Student("Chinh", 21, 99501);
 
-  animal.name = "Monkey";
-  animal.numberOfLegs = 144;
-  animal.lifeSpan = 20;
-
-  animal.display();
-//  Animal name: Monkey.
-// Number of Legs: 144.
-// Life Span: 20.
-
+  print("Name: ${student.name}");
+  print("Age: ${student.age}");
+  print("Roll Number: ${student.rollNumber}");
 }
