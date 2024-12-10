@@ -1,12 +1,22 @@
+class Point {
+  final int x;
+  final int y;
+
+  const Point(this.x, this.y);
+}
+
 void main() {
-  var example = {
-    'name': 'John Doe',
-    'phone': '1234567890',
-    'city': 'New York',
-    'code': 'NYC'
-  };
+  // p1 and p2 has the same hash code.
+  Point p1 = const Point(1, 2);
+  print("The p1 hash code is: ${p1.hashCode}");
 
-  var keysWithLength4 = example.keys.where((key) => key.length == 4);
+  Point p2 = const Point(1, 2);
+  print("The p2 hash code is: ${p2.hashCode}");
+  // without using const
+  // this has different hash code.
+  Point p3 = Point(2, 2);
+  print("The p3 hash code is: ${p3.hashCode}");
 
-  print('Keys with length 4: $keysWithLength4');
+  Point p4 = Point(2, 2);
+  print("The p4 hash code is: ${p4.hashCode}");
 }
