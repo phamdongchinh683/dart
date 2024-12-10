@@ -1,17 +1,13 @@
 class Student {
   String? name;
   int? age;
-  int? rollNumber;
+  String? schoolname;
+  String? grade;
 
-  // Constructor
-  Student(String name, int age, int rollNumber) {
+  // Default Constructor
+  Student() {
     print(
         "Constructor called"); // this is for checking the constructor is called or not.
-    this.name = name;
-    this.age = age;
-    this.rollNumber = rollNumber;
+    schoolname = "ABC School";
   }
-
-  // Constructor in short form
-  // Student(this.name, this.age, this.subject, this.salary);
 }
