@@ -1,9 +1,9 @@
-import 'macbook.dart';
+import 'Manager.dart';
 
 void main() {
-  // Creating an object of the MacBook class
-  MacBook macbook = MacBook();
-  macbook.show();
-// Laptop show method
-// MacBook show method
+  Manager manager = Manager("John", 25000.0);
+//   Employee constructor
+// Name: John
+// Salary: 25000.0
+// Manager constructor
 }
