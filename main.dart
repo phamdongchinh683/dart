@@ -1,15 +1,22 @@
 import 'student.dart';
+import 'teacher.dart';
 
 void main() {
-  // Create an object of Student class
-  Student s = new Student();
-  // setting values to the object using setter
-  s.name = "John Doe";
-  s.classnumber = 0;
+  // Creating an object of the Student class
+  var student = Student();
+  student.name = "John";
+  student.age = 20;
+  student.schoolName = "ABC School";
+  student.schoolAddress = "New York";
+  student.display();
+  student.displaySchoolInfo();
 
-  // Display the values of the object
-  s.display();
+  var teacher = Teacher();
+  teacher.level = 'master';
+  teacher.subject = 'java';
+  teacher.age = 21;
+  teacher.name = 'Chinh';
 
-  // This will generate error
-  //s.setClassNumber(13);
+  teacher.display();
+  teacher.displayInfo();
 }

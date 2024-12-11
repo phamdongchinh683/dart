@@ -1,22 +1,13 @@
-class Student {
-  // Private properties
-  String? _name;
-  int? _classnumber;
+import 'person.dart';
 
-  // Setter to update the value of name property
-  set name(String name) => this._name = name;
+class Student extends Person {
+  // Fields
+  String? schoolName;
+  String? schoolAddress;
 
-  // Setter to update the value of classnumber property
-  set classnumber(int classnumber) {
-    if (classnumber <= 1 || classnumber > 12) {
-      throw ('Classnumber must be between 1 and 12');
-    }
-    this._classnumber = classnumber;
-  }
-
-  // Method to display the values of the properties
-  void display() {
-    print("Name: $_name");
-    print("Class Number: $_classnumber");
+  // Method
+  void displaySchoolInfo() {
+    print("School Name: $schoolName");
+    print("School Address: $schoolAddress");
   }
 }
