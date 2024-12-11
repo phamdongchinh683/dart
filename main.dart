@@ -1,9 +1,10 @@
-import 'Manager.dart';
+import 'Developer.dart';
+import 'Manage.dart';
 
 void main() {
-  Manager manager = Manager("John", 25000.0);
-//   Employee constructor
-// Name: John
-// Salary: 25000.0
-// Manager constructor
+  Manager manager = Manager();
+  Developer developer = Developer();
+
+  manager.salary();
+  developer.salary();
 }
