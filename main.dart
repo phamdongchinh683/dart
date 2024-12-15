@@ -1,44 +1,26 @@
-abstract class Vehicle {
-  // Abstract method
-  void start();
-  // Abstract method
-  void stop();
+abstract class Person {
+  String? name;
+  void run();
+  void walk();
 }
 
-class Car extends Vehicle {
-  // Implementation of start()
+class Student implements Person {
+  String? name;
+
   @override
-  void start() {
-    print('Car started');
+  void run() {
+    print("student is running");
   }
 
-  // Implementation of stop()
   @override
-  void stop() {
-    print('Car stopped');
-  }
-}
-
-class Bike extends Vehicle {
-  // Implementation of start()
-  @override
-  void start() {
-    print('Bike started');
-  }
-
-  // Implementation of stop()
-  @override
-  void stop() {
-    print('Bike stopped');
+  void walk() {
+    print("student is walking");
   }
 }
 
 void main() {
-  Car car = Car();
-  car.start();
-  car.stop();
-
-  Bike bike = Bike();
-  bike.start();
-  bike.stop();
+  var student = Student();
+  student.name = "Chinh";
+  student.run();
+  student.walk();
 }
