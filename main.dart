@@ -1,10 +1,26 @@
-import 'Developer.dart';
-import 'Manage.dart';
+abstract class Person {
+  String? name;
+  void run();
+  void walk();
+}
+
+class Student implements Person {
+  String? name;
+
+  @override
+  void run() {
+    print("student is running");
+  }
+
+  @override
+  void walk() {
+    print("student is walking");
+  }
+}
 
 void main() {
-  Manager manager = Manager();
-  Developer developer = Developer();
-
-  manager.salary();
-  developer.salary();
+  var student = Student();
+  student.name = "Chinh";
+  student.run();
+  student.walk();
 }
