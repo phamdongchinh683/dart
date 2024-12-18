@@ -8,5 +8,4 @@ void main() {
 
   WaterBottle bottle2 = WaterBottle();
 
-  bottle2.open();
-}
+  bottle2.open()
