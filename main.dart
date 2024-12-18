@@ -1,9 +1,7 @@
-import 'gender.dart';
+import 'Cat.dart';
 
 void main() {
-  // Print all enum values
-  print('Gender values:');
-  for (var gender in Gender.values) {
-    print(gender);
-  }
+  Cat myCat = Cat(1, 'White', 'Snowball', 'Meow');
+
+  myCat.displayDetails();
 }
