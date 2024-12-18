@@ -1,26 +1,11 @@
-abstract class Person {
-  String? name;
-  void run();
-  void walk();
-}
-
-class Student implements Person {
-  String? name;
-
-  @override
-  void run() {
-    print("student is running");
-  }
-
-  @override
-  void walk() {
-    print("student is walking");
-  }
-}
+import 'Bottle.dart';
+import 'WaterBottle.dart';
 
 void main() {
-  var student = Student();
-  student.name = "Chinh";
-  student.run();
-  student.walk();
-}
+  Bottle bottle = Bottle();
+
+  bottle.open();
+
+  WaterBottle bottle2 = WaterBottle();
+
+  bottle2.open()
