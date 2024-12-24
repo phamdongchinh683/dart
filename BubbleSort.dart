@@ -13,5 +13,5 @@ void bubbleSort(List<int> arr) {
 void main() {
   List<int> numbers = [64, 34, 25, 12, 22, 11, 90];
   bubbleSort(numbers);
-  print(numbers); // [11, 12, 22, 25, 34, 64, 90]
+  print(numbers);
 }
